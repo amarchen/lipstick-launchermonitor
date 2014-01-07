@@ -3,6 +3,7 @@
 //
 // Copyright (c) 2012 Jolla Ltd.
 // Contact: Thomas Perl <thomas.perl@jolla.com>
+// Copyright (c) 2014, Artem Marchenko <artem.marchenko@gmail.com>
 //
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public

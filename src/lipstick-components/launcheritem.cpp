@@ -14,6 +14,7 @@
 //
 // Copyright (c) 2011, Robin Burchell
 // Copyright (c) 2012, Timur Kristóf <venemo@fedoraproject.org>
+// Copyright (c) 2014, Artem Marchenko <artem.marchenko@gmail.com>
 
 #include <QDebug>
 #include <QProcess>

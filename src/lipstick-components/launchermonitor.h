@@ -2,6 +2,7 @@
 // This file is part of lipstick, a QML desktop library
 //
 // Copyright (c) 2012 Jolla Ltd.
+// Copyright (c) 2014, Artem Marchenko <artem.marchenko@gmail.com>
 // Contact: Thomas Perl <thomas.perl@jolla.com>
 //
 // This library is free software; you can redistribute it and/or

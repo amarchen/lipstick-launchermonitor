@@ -13,6 +13,7 @@
 // GNU Lesser General Public License for more details.
 //
 // Copyright (c) 2012, Timur Kristóf <venemo@fedoraproject.org>
+// Copyright (c) 2014, Artem Marchenko <artem.marchenko@gmail.com>
 
 #ifndef LIPSTICKGLOBAL_H
 #define LIPSTICKGLOBAL_H
