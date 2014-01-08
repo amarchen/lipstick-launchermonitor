@@ -6,7 +6,7 @@ TARGET = lipstick-launchermonitor
 # It is supposed to be deployed by your main app next to your main project.
 # For now main project dir is hardcoded here.. Not sure how solve it elegantly.
 # Maybe skip this setting and require it to be set by the higher level .pro or .yaml/spec?
-TARGETPATH = /usr/share/harbour-launcher/lib
+TARGETPATH = /usr/share/harbour-quicklauncher/lib
 target.path = $$TARGETPATH
 
 CONFIG += link_pkgconfig
