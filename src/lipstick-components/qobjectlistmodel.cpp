@@ -163,6 +163,5 @@ void QObjectListModel::move(int oldRow, int newRow)
 
 QHash<int, QByteArray> QObjectListModel::roleNames() const
 {
-    qDebug() << "QOLM: returning m_roles: " << m_roles;
     return m_roles;
 }
