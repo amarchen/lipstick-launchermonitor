@@ -78,7 +78,7 @@ public:
 
     QString getOriginalIconId() const;
     void setIconFilename(const QString &path);
-    QString iconFilename() const;
+    Q_INVOKABLE QString iconFilename() const;
 
     Q_INVOKABLE void launchApplication();
 

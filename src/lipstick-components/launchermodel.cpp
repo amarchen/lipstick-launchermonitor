@@ -330,7 +330,7 @@ LauncherItem *LauncherModel::addItemIfValid(const QString &path, QMap<int, Launc
     bool shouldDisplay = item->shouldDisplay();
     if (isValid && shouldDisplay) {
         addItem(item);
-        qDebug() << "added item " << item->title();
+//        qDebug() << "added item " << item->title();
 
         QVariant pos = launcherPos(item->filePath());
 
