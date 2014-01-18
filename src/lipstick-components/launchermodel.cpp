@@ -231,7 +231,6 @@ void LauncherModel::loadPositions()
 
 void LauncherModel::reorderItems(const QMap<int, LauncherItem *> &itemsWithPositions)
 {
-    qDebug() << "reorderItems";
     // QMap is key-ordered, the int here is the desired position in the launcher we want the item to appear
     // so, we'll iterate from the lowest desired position to the highest, and move the items there.
     for (QMap<int, LauncherItem *>::ConstIterator it = itemsWithPositions.constBegin();
