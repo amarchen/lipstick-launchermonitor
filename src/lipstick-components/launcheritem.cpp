@@ -31,6 +31,9 @@
 
 #include "launcheritem.h"
 
+#include <QDesktopServices>
+#include <QUrl>
+
 LauncherItem::LauncherItem(const QString &filePath, QObject *parent)
     : QObject(parent)
     , _isLaunching(false)
@@ -126,7 +129,7 @@ void LauncherItem::launchApplication()
 {
     if (_desktopEntry.isNull())
         return;
-
+/**
 #if defined(HAVE_CONTENTACTION)
     LAUNCHER_DEBUG("launching content action for" << _desktopEntry->name());
     ContentAction::Action action = ContentAction::Action::launcherAction(_desktopEntry, QStringList());
@@ -148,10 +151,15 @@ void LauncherItem::launchApplication()
 
     // DETAILS: http://standards.freedesktop.org/desktop-entry-spec/latest/index.html
     // DETAILS: http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s06.html
+    qDebug() << "commandText: " << commandText;
 
     // Launch the application
     QProcess::startDetached(commandText);
 #endif
+**/
+    // Real lipstick has HAVE_CONTENTACTION defined, but we are not allowed to link to contentaction5 by harbour rules
+    // So let's use content actions indirectly via QDesktopServices (probably same as using sdg-open, but without an extrsa shell)
+    QDesktopServices::openUrl(QUrl::fromLocalFile(_desktopEntry->fileName()));
 
     setIsLaunching(true);
 
